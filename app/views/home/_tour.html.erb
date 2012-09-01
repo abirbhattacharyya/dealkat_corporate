@@ -1,0 +1,30 @@
+<div class="popup">
+    <div class="hider"></div>
+    <div class="box">
+        <div class="aligner">
+
+        <a class="prev" onclick="javascript:check_class(this);">Previous product</a>
+        <a class="next" onclick="javascript:check_class(this);">Next product</a>
+        <a class="close" onclick="new Ajax.Request('home/close_tour');">Close window</a>
+
+        <div class="visual"><img src="/images/samples/screen-1.jpg" width="434" height="284" alt="" id="vis_image"></div>
+        <div class="visual-shadow"></div>
+
+        <div class="paging">
+            <a class="current" id="link1" onclick="javascript:check_class(this);">1</a>
+            <a id="link2" onclick="javascript:check_class(this);">2</a>
+            <a id="link3" onclick="javascript:check_class(this);">3</a>
+            <a id="link4" onclick="javascript:check_class(this);">4</a>
+            <a id="link5" onclick="javascript:check_class(this);">5</a>
+            <a id="link6" onclick="javascript:check_class(this);">6</a>
+            <a id="link7" onclick="javascript:check_class(this);">7</a>
+        </div>
+
+        <p>
+            <strong id="prod_title">Say Your Price</strong>
+            <span id="text">Empower your customers, let them Say Their Price. They get great deals and it's good for you. You manage margins with targeted discounts, and save over mass price cuts.</span>
+        </p>
+
+        </div><!-- .aligner -->
+    </div><!-- .box -->
+</div><!-- .popup -->

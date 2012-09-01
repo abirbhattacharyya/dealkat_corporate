@@ -1,0 +1,36 @@
+    <%= hidden_field_tag :divid, @id %>
+    <div class="hider"></div>
+    <div class="box">
+        <div class="aligner">
+          <div id="box" class="visual"><img src="/images/samples/screen-<%= (@id < 5) ? "#{@id}.jpg" : "#{@id}.png" %>" width="434" height="284" alt="" id="vis_image"></div>
+          <div class="visual-shadow"></div>
+
+          <p>
+                <% if @id == 1 %>
+                    <strong id="prod_title">Say Your Price</strong>
+                    <span id="text">Empower your customers, let them Say Their Price. They get great deals and it's good for you. You manage margins with targeted discounts, and save over mass price cuts.</span>
+                <% elsif @id == 2 %>
+                    <strong id="prod_title">Negotiations</strong>
+                    <span id="text">Entertain your customers as they buy from you. They play the game of offers, counteroffers and the fun of bargaining + getting a good deal. You get incremental sales.</span>
+                <% elsif @id == 3 %>
+                    <strong id="prod_title">Time-limited discounts</strong>
+                    <span id="text">Offer time-limited discounts to acquire new customers or liquidate products or perishable inventory. Hold sales for any length of time. Turn on & off & scale up automatically.</span>
+                <% elsif @id == 4 %>
+                    <strong id="prod_title">Your Dashboard</strong>
+                    <span id="text">Manage your campaigns and inventory sold over social media channels. Get real-time analytics including purchase intent.</span>
+                <% elsif @id == 5 %>
+                    <strong id="prod_title">Packages</strong>
+                    <span id="text">Our software crunches millions of combinations to create packages to maximize your margins while deliighting your customers; or the butler feature makes packages for consumers on the fly.</span>
+                <% elsif @id == 6 %>
+                    <strong id="prod_title">Price Slide</strong>
+                    <span id="text">As your offers feel the social media love, consumers feel the sliding prices. Encourage Facebook & Twitter users to like and retweet your offers, and everybody benefits.</span>
+                <% elsif @id == 7 %>
+                    <strong id="prod_title">Purchase Intent</strong>
+                    <span id="text">We score twitter with the Purchase Intent of different segments. Message your followers on Twitter and we automatically iterate to get you better campaign results + refine your score.</span>
+                <% else %>
+                    <strong id="prod_title">Say Your Price</strong>
+                    <span id="text">Empower your customers, let them Say Their Price. They get great deals and it's good for you. You manage margins with targeted discounts, and save over mass price cuts.</span>
+              <% end %>
+          </p>
+        </div><!-- .aligner -->
+    </div><!-- .box -->

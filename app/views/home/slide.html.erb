@@ -1,0 +1,15 @@
+<div id="popup" class="popup">
+    <%= render :partial => "home/slide" %>
+</div><!-- .popup -->
+<% javascript_tag do %>
+    var idtimer = setInterval(function(){ pullticker();}, 3000);
+
+    function pullticker()
+    {
+        var id = $('divid').value;
+        new Ajax.Request("/home/slide", {
+          method: 'get',
+          parameters: {divid: id}
+        });
+    }
+<% end %>

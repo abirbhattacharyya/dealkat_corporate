@@ -1,0 +1,6 @@
+<% content_tag :ul, :class => "tabs" do %>
+		<%= content_tag :li, link_to("Products", products_path), :class => ((request.path == products_path) ? "current" : "") %>
+		<%= content_tag :li, link_to("Product Tour", tour_path), :class => ((request.path == tour_path) ? "current" : "") %>
+		<%= content_tag :li, link_to("Case Study", case_study_path), :class => ((request.path == case_study_path) ? "current" : "") %>
+		<%= content_tag :li, link_to("Technology", technology_path), :class => ((request.path == technology_path) ? "current" : "") %>
+<% end %>

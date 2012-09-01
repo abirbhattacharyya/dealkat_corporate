@@ -1,0 +1,30 @@
+<div id="content" class="home">
+    <div class="top-rounder"></div>
+    <div class="aligner">
+        <div class="invite">
+	    <div class="visual">
+	        <img src="/images/samples/screenshot-3d.png" width="299" height="300" alt="">
+	        <p>Use dynamic pricing as your revenue engine to talk + sell to social media customers!</p>
+	    </div>
+	    <h1>Cool, talk to you soon!</h1>
+	    
+	    <%= error_messages_for(:contact, :message => "", :header_message => "")%>
+            <% form_for :contact do |f| %>
+                  <p>
+                      <label>Your email?</label>
+                      <%= f.text_field :email %>
+                  </p>
+                  <p>
+                      <label>Your company?</label>
+                      <%= f.text_field :company %>
+                  </p>
+                  <p>
+                      <label>Your phone #? <small>(optional but recommended)</small></label>
+                      <%= f.text_field :phone, :maxLength => 14, :class => "small", :onKeyPress => "return keyAllowed(event,'0123456789.-()')" %>
+                  </p>
+                  <p class="actions"><%= f.submit "Go!" %></p>
+            <% end %>
+        </div><!-- .invite -->
+    </div><!-- .aligner -->
+    <div class="bottom-rounder"></div>
+</div><!-- #content -->

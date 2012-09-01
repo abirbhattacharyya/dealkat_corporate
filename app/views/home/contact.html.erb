@@ -1,0 +1,31 @@
+<div id="preface">
+Get in touch, we would be delighted to hear from you!</div>
+
+<div id="content" class="tabbed columns">
+    <div class="top-rounder"></div>
+    <div class="columns">
+        <div class="column side">
+						<%= render :partial => "partials/company_links"%>
+        </div><!-- .column.side -->
+        <div class="column wide">
+				    <p>
+				    Dealkat<br/>
+				    82 Pioneer Way, Suite 109<br/>
+				    Mountain View, CA 94041<br/><br/>
+				
+				    <b>Phone: 650.210.3772</b><br/>
+				
+				    <b>Email:</b> <%=mail_to "dealkat@dealkat.com"%>
+				    </p>
+				    
+						<% if @map %>
+						  <%= @map.to_html %>
+						  <div style="width: 500px; height: 300px;">
+						    <%= @map.div %>
+						  </div>
+						<% end %>
+        </div><!-- .column.wide -->
+        <br class="clearer">
+    </div><!-- .columns -->
+    <div class="bottom-rounder"></div>
+</div><!-- #content -->
